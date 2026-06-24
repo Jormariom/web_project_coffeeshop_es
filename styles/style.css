@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter");
+  src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.woff2") format("woff2");
 }
-
 @font-face {
   font-family: "Noto Serif";
-  src: url("../fonts/Noto_Serif/");
+  src: url("../fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.woff2")
+    format("woff2");
 }
 
 body {
@@ -14,12 +14,13 @@ body {
   width: 100vh;
   min-width: 1100px;
   max-width: 1600px;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter";
   font-style: normal;
   color: #000;
   margin: auto;
   display: inline;
 }
+/* , Arial, sans-serif */
 
 header {
   background-image: url(../images/background_header.svg);
