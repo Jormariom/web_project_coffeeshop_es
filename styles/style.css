@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter");
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  src: url("../fonts/Noto_Serif/");
+}
+
 body {
   background-color: #fff;
   position: relative;
@@ -12,7 +22,7 @@ body {
 }
 
 header {
-  background-image: url(background_header.svg);
+  background-image: url(../images/background_header.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +38,7 @@ a {
   color: #000;
 }
 
-p{
+p {
   margin: 0;
 }
 
