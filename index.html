@@ -1,60 +1,84 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Triple Espresso landing page" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Triple Espresso</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="icon" href="images/favicon.ico" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-nav">
-        <nav class="nav">
-          <img
-            src="images/logo_coffeeshop_dark.svg"
-            width="105"
-            height="39"
-            class="logo"
-            alt="logo_coffeeshop_oscuro"
-          />
-          <ul class="nav-links">
-            <li class="nav-link">
-              <a href="#reservation">Reservar una mesa</a>
-            </li>
-            <li class="nav-link"><a href="#contact">Contactos</a></li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Triple Espresso landing page" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triple Espresso</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-nav">
+      <nav class="nav">
+        <img src="images/header/logo_coffeeshop_dark.svg" width="105" height="39" class="logo"
+          alt="logo_coffeeshop_oscuro" />
+        <ul class="nav-links">
+          <li class="nav-link">
+            <a href="#reservation">Reservar una mesa</a>
+          </li>
+          <li class="nav-link"><a href="#contact">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-content">
+      <h1 class="header-title">
+        <span class="header-italic">Café de especialidad</span> en Triple
+        Peaks
+      </h1>
+      <p class="header-description">
+        ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+        para darte energía y motivar tu creatividad.
+      </p>
+      <img src="images/header/inside_coffee_shop.png" width="646" height="568" class="header-image"
+        alt="dentro_coffee_shop" />
+    </div>
+    <div class="header-info">
+      <div class="header-hours">
+        <p>Horario:</p>
+        <p>Lunes a Viernes (de 10:00h a 19:00h)</p>
+        <p>Sábados y Domingos (de 11:00h a 18:00h)</p>
       </div>
-      <div class="header-content">
-        <h1 class="header-title">
-          <span class="header-italic">Café de especialidad</span> en Triple
-          Peaks
-        </h1>
-        <p class="header-description">
-          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-          para darte energía y motivar tu creatividad.
-        </p>
-        <img
-          src="images/inside_coffee_shop.png"
-          width="646"
-          height="568"
-          class="header-image"
-          alt="dentro_coffee_shop"
-        />
-      </div>
-      <div class="header-info">
-        <div class="header-hours">
-          <p>Horario:</p>
-          <p>Lunes a Viernes (de 10:00h a 19:00h)</p>
-          <p>Sábados y Domingos (de 11:00h a 18:00h)</p>
-        </div>
-        <p class="header-address">Avenida del Éxito 200, Ciudad Triple Peaks</p>
-      </div>
-    </header>
-    <main class="content"></main>
-    <footer class="footer"></footer>
-  </body>
+      <p class="header-address">Avenida del Éxito 200, Ciudad Triple Peaks</p>
+    </div>
+  </header>
+  <main class="content"></main>
+  <div class="form-container">
+    <h1 class="form-container__title">Reservar una mesa</h1>
+    <form class="form">
+      <label class="form__label" for="nombre">Nombre *</label>
+      <input type="text" class="form__input" id="nombre" placeholder="Nombre" required />
+      <label class="form__label" for="comensales">Número de comensales *</label>
+
+      <input type="number" class="form__input" id="comensales" placeholder="1-8" min="1" max="8" required />
+
+      <label class="form__label" for="fechaHora">Fecha y hora *</label>
+
+      <input type="date" class="form__input" id="fechaHora" required />
+
+      <label class="form__label" for="email">Tu correo electrónico *</label>
+
+      <input type="email" class="form__input" id="email" placeholder="email@email.com" required />
+    </form>
+    <div class="form__button">
+      <button type="submit" class="form__button form__button--submit">Reservar una mesa</button>
+    </div>
+    <div class="form__checkbox">
+      <input type="checkbox" class="form__checkbox-input">Acepto los términos de uso</input>
+    </div>
+  </div>
+  <footer class="footer"></footer>
+</body>
+
 </html>
