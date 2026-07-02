@@ -62,6 +62,10 @@ p {
   color: #000;
 }
 
+.nav-link-text:hover {
+  color: #ff976b;
+}
+
 .header-content {
   padding-left: 80px;
   position: relative;
@@ -135,7 +139,7 @@ p {
   width: 100%;
   padding-top: 100px;
   padding-bottom: 80px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -151,7 +155,7 @@ p {
 }
 
 .form__label {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -160,7 +164,7 @@ p {
 }
 
 .form__input {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -177,7 +181,7 @@ p {
   width: 100%;
   height: 60px;
   max-width: 385px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   border-radius: 4px;
   font-style: normal;
   font-weight: 500;
@@ -191,6 +195,10 @@ p {
 .form__button--submit {
   background-color: #e96e3a;
   color: white;
+}
+
+.form__button--submit:hover {
+  background-color: rgb(233, 110, 58, 0.7);
 }
 
 .form__checkbox {
@@ -259,16 +267,20 @@ p {
 
 .footer__bg-circle {
   position: absolute;
-  bottom: 128px;
-  left: -10px;
+  bottom: 150px;
+  left: -40px;
   width: 340px;
   height: 340px;
   border-radius: 100%;
   z-index: 0;
-  background-color: #ff976b;
+  background-color: rgb(255, 214, 197, 0.3);
 }
 
 .footer__social-link--text {
   text-decoration: none;
   color: #fff;
+}
+
+.footer__social-link--text:hover {
+  color: #ffd6c5;
 }
