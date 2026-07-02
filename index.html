@@ -8,15 +8,14 @@
   <title>Triple Espresso</title>
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="images/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-</head>
+    rel="stylesheet" </head>
 
 <body>
   <header class="header">
@@ -26,9 +25,11 @@
           alt="logo_coffeeshop_oscuro" />
         <ul class="nav-links">
           <li class="nav-link">
-            <a href="#reservation">Reservar una mesa</a>
+            <a href="#reservation" class="nav-link-text">Reservar una mesa</a>
           </li>
-          <li class="nav-link"><a href="#contact">Contactos</a></li>
+          <li class="nav-link">
+            <a href="#contact" class="nav-link-text">Contactos</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -78,7 +79,30 @@
       <input type="checkbox" class="form__checkbox-input">Acepto los términos de uso</input>
     </div>
   </div>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-container__social">
+        <div class="footer__bg-circle"></div>
+        <img src="images/content/logo_coffeeshop_light.svg" class="footer__logo">
+        <div class="footer__social-container">
+          <p class="footer__social-title">Redes sociales</p>
+          <ul class="footer__social-links">
+            <li class="footer__social-link">
+              <img src="images/content/facebook_white.svg" class="footer__social-link--icon"><a href="#"
+                class="footer__social-link--text">Facebook</a>
+            </li>
+            <li class="footer__social-link">
+              <img src="images/content/instagram_white.svg" class="footer__social-link--icon"><a href="#"
+                class="footer__social-link--text">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-container__social--copyright">
+        <p class="footer__social--copyright">© 2026 Jorge Monterroza</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
